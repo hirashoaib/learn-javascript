@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 70
+    Objects: Properties
+    Property existance
+    -->
+   
+</body>
+<script>
+    
+    var plan1 = {
+        name: "Basic",
+        price: 3.99,
+        space: 100,
+        transfer: 1000,
+        pages: 10
+    };
+
+    delete plan1.pages;
+    var a = "pages" in plan1
+
+    alert(plan1.pages);
+    alert(a);
+
+
+
+</script>
+</html>

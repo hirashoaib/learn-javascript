@@ -1,0 +1,26 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 65
+    The DOM: Attributes
+    -->
+    
+    <div id="d1" class="newDiv">
+        Hello World
+    </div>
+
+    <img id="img1" src="dan.gif" alt="Dan" height="42" width="42">
+    
+</body>
+<script>
+    var a = document.getElementById("d1");
+    
+    alert(a.hasAttributes());
+    alert(a.hasAttribute("class"));
+    alert(a.hasAttribute("src"));
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+
+</head>
+<body>
+    <!-- 
+     Chapter 51
+     Reading and setting paragraph text
+    -->
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+    
+</body>
+<script>
+    function expandLoris() {
+        var para = document.getElementById("slowLoris");
+        alert(para);
+        alert(para.innerHTML);
+        para.innerHTML = "Hello World";
+
+    }
+
+   
+</script>
+
+
+</html>

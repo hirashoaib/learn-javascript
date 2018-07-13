@@ -1,0 +1,41 @@
+<html>
+<head>
+
+</head>
+<body>
+    <!-- 
+     Chapter 50
+     Setting field values
+    -->
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+    
+</body>
+<script>
+    function fillCity() {
+        var cityName;
+        var zipEntered = document.getElementById("zip").value;
+        switch (zipEntered) {
+            case "60608" :
+                cityName = "Chicago";
+                break;
+            case "68114" :
+                cityName = "Omaha";
+                break;
+            case "53212" :
+                cityName = "Milwaukee";
+                break;
+            default:
+                cityName = "City Not Found";
+                break;
+        }
+        document.getElementById("city").value = cityName;
+    }
+</script>
+
+
+</html>

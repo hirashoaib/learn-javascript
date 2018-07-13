@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 79
+    Browser control: Filling the window with content
+    -->
+   
+   <button onclick="openNewWindow()">Open New Window</button>
+   <button onclick="closeNewWindow()">Close New Window</button>
+   
+</body>
+<script>
+     var newWindow = null;
+    function openNewWindow(){
+        newWindow = window.open("http://www.animals.com/capuchin.html");
+    }
+
+    function closeNewWindow(){
+        newWindow.close();
+    }
+
+        
+</script>
+</html>

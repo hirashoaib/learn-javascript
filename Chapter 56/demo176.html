@@ -1,0 +1,31 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 56
+     Target all elements by tag name
+    -->
+    
+    <p id="p1">Hello World Paragraph 1</p>
+    <p id="p2">Hello World Paragraph 2</p>
+    <p id="p3">Hello World Paragraph 3</p>
+    <p id="p4">Hello World Paragraph 4</p>
+    <p id="p5">Hello World Paragraph 5</p> 
+    <button onclick="applyFirst()">First</button>    
+    
+</body>
+<script>
+    function applyFirst() {
+        var paraList = document.getElementsByTagName("p");
+        for(var i=0;i<paraList.length;i++){
+            alert(paraList[i].innerHTML);
+        }
+        
+    }
+    
+</script>
+
+
+</html>

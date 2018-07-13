@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 80
+    Browser control: Controlling the window's size and location
+    -->
+   
+   <button onclick="openNewWindow()">Open New Window</button>
+   <button onclick="closeNewWindow()">Close New Window</button>
+   
+</body>
+<script>
+     var newWindow = null;
+    function openNewWindow(){
+        newWindow = window.open("http://www.animals.com/capuchin.html","My Window","width=420,height=380");
+    }
+
+    function closeNewWindow(){
+        newWindow.close();
+    }
+
+        
+</script>
+</html>

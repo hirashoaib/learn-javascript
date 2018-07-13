@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 77
+    Browser control: Getting and setting the URL another way
+    -->
+   
+   <div>
+       Hello World
+   </div>
+   <button onclick="onClickButton1()" >Reload With True</button>
+   <button onclick="onClickButton2()" >Reload With False</button>
+   <button onclick="onClickButton3()" >Reload </button>
+   <button onclick="onClickButton4()" >Reload Alternative</button>
+</body>
+<script>
+    
+    alert(window.location.href);
+    function onClickButton1(){
+        window.location.reload(true);
+    }
+    function onClickButton2(){
+        window.location.reload(false);
+    }
+    function onClickButton3(){
+        window.location.reload();
+    }
+
+    function onClickButton4(){
+        window.location.href = window.location.href
+    }
+
+    
+
+
+
+</script>
+</html>

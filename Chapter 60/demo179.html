@@ -1,0 +1,34 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 60
+    The DOM: Finding children
+    -->
+    
+    <div id="first">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+
+    
+    <div id="second">
+        <p>5</p>
+        <p>6</p>
+    </div>  
+    
+</body>
+<script>
+    var d = document.getElementsByTagName("p");
+    for(a=0; a<d.length ; a++){
+        alert(d[a].innerHTML);
+    }
+
+</script>
+
+
+</html>

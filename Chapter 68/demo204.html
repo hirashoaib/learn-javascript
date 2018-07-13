@@ -1,0 +1,43 @@
+<html>
+<head>
+   <style>
+        .newDiv {
+            background-color: slategrey
+        }
+
+        .updatedDiv {
+            background-color: rosybrown
+        }
+   </style>
+</head>
+<body>
+    <!-- 
+     Chapter 68
+    The DOM: Inserting nodes
+    Remove Element
+    -->
+    <div id="mydata">
+        <p id="p1">First</p>
+        <p id="p2">Second</p>
+        <p id="p3">Thrid</p>
+        <p id="p4">Forth</p>
+    </div>
+
+    <input type="button" value="Remove Element" onclick="removeElement()"/>
+   
+</body>
+<script>
+    
+    function removeElement(){
+        var mainDiv = document.getElementById("mydata");
+
+        var p2 = document.getElementById("p2");
+
+        mainDiv.removeChild(p2);
+    }
+    
+
+
+
+</script>
+</html>

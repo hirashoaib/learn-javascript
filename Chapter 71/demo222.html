@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 71
+    Objects: Methods
+    functions in Object
+    -->
+   
+</body>
+<script>
+    
+    var plan1 = {
+        name: "Basic",
+        price: 3.99,
+        space: 100,
+        transfer: 1000,
+        pages: 10,
+        calculateAnnualPrice : function (a,b){
+            return a*b;
+        }
+    };
+
+
+    var annual = plan1.calculateAnnualPrice(3.99,12)
+    alert(annual);
+
+</script>
+</html>

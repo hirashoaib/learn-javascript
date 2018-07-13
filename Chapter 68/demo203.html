@@ -1,0 +1,49 @@
+<html>
+<head>
+   <style>
+        .newDiv {
+            background-color: slategrey
+        }
+
+        .updatedDiv {
+            background-color: rosybrown
+        }
+   </style>
+</head>
+<body>
+    <!-- 
+     Chapter 68
+    The DOM: Inserting nodes
+    Insert After
+    -->
+    <div id="mydata">
+        <p id="p1">First</p>
+        <p id="p2">Second</p>
+        <p id="p3">Thrid</p>
+        <p id="p4">Forth</p>
+    </div>
+
+    <input type="button" value="Add Element" onclick="addEle()"/>
+   
+</body>
+<script>
+    
+    function addEle(){
+        var mainDiv = document.getElementById("mydata");
+
+        var p2 = document.getElementById("p2");
+
+
+        var p = document.createElement("p");
+        p.setAttribute("id","p5");
+        var t = document.createTextNode("This is new Text in p");
+        p.appendChild(t);
+
+        mainDiv.insertBefore(p,p2.nextSibling);
+    }
+    
+
+
+
+</script>
+</html>

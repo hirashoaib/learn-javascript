@@ -1,0 +1,27 @@
+<html>
+<head>
+  
+</head>
+<body>
+    <!-- 
+     Chapter 66
+    The DOM: Attribute names and values
+    -->
+    
+    <div id="d1" class="newDiv">
+        Hello World
+    </div>
+    
+</body>
+<script>
+    var a = document.getElementById("d1");
+    var attrList = a.attributes;
+    alert(attrList[0].nodeName);
+    alert(attrList[0].nodeValue);
+
+    alert(attrList[1].nodeName);
+    alert(attrList[1].nodeValue);
+
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 75
+    Objects: Checking for properties and methods
+    -->
+   
+</body>
+<script>
+
+   function Student(name, age){
+        this.name = name;
+        this.age = age;
+        this.email = "abc@gmail.com";
+   }
+
+
+   var b = new Student("Arsalan",20);
+   //alert("name" in b);
+   //alert("email" in b);
+   for(var a in b){
+        alert(a)
+   }
+   
+   
+
+
+
+</script>
+</html>

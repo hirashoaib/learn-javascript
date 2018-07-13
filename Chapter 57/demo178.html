@@ -1,0 +1,44 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 57
+    Target some elements by tag name
+    -->
+    
+    <div id="div1">
+        <p id="p1">Hello World Paragraph 1</p>
+        <p id="p2">Hello World Paragraph 2</p>
+        <p id="p3">Hello World Paragraph 3</p>
+    </div>
+
+    <div id="div2">
+        <p id="p4">Hello World Paragraph 4</p>
+        <p id="p5">Hello World Paragraph 5</p> 
+    </div>
+    <button onclick="applyFirst()">First</button>  
+    <button onclick="applySecond()">Second</button>  
+    
+</body>
+<script>
+    function applyFirst() {
+        var paraList = document.getElementsByTagName("p");
+        for(var i=0;i<paraList.length;i++){
+             paraList[i].style.color="darkblue";
+        }        
+    }
+
+    function applySecond() {
+        var divElement = document.getElementById("div2");
+        var paraList = divElement.getElementsByTagName("p");
+        for(var i=0;i<paraList.length;i++){
+             paraList[i].style.fontWeight="bold";
+        }        
+    }
+    
+</script>
+
+
+</html>

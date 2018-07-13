@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 75
+    Objects: Checking for properties and methods
+    -->
+   
+</body>
+<script>
+
+   function Student(name, age){
+        this.name = name;
+        this.age = age;
+        this.email = "abc@gmail.com";
+   }
+
+   Student.prototype.study = function (){
+       alert("He is studying to become a Software developer");
+   }
+
+
+   var b = new Student("Arsalan",20);
+   
+   alert(b.hasOwnProperty("name"));
+   alert(b.hasOwnProperty("study"));
+   
+   
+
+
+
+</script>
+</html>

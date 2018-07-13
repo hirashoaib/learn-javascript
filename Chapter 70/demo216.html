@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 70
+    Objects: Properties
+    -->
+   
+</body>
+<script>
+    
+    var plan1 = {
+        name: "Basic",
+        price: 3.99,
+        space: 100,
+        transfer: 1000,
+        pages: 10,
+        features : ["Guarantee", "Free Ship"]
+    };
+
+    alert(plan1.name);
+
+    plan1.name = "Professional";
+    plan1.space = 150;
+    plan1.pages = undefined;
+
+    delete plan1.transfer;
+
+    alert(plan1.pages);
+    alert(plan1.transfer);
+
+
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<script>
+
+    //Chap 37
+    // Functions
+    // passing data back from them
+
+    function calculateValue(first,second){
+        var a = first;
+        var b = second;
+        var c = a + b;
+        //alert(c);
+        return c;
+    }
+
+    function multiply(multiple, value){
+        return value * multiple;
+    }
+    var d = calculateValue(3,5);
+    var e = multiply(2,5);
+    var f = multiply(2,d);
+    var g = multiply(2 , calculateValue(2,5));
+    alert(g);
+            
+    var i = multiply(2 , calculateValue(7,2));
+    alert(i);
+
+    var h = calculateValue(3, multiply(2,5));
+    alert(h);
+
+    
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

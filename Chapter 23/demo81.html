@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<script>
+
+    //Chap 23
+    // indexOf
+
+    var text = "The quick fox jumps over the brown lazy dog";
+    
+    var firstCharIndex = text.indexOf("brown");
+    alert(firstCharIndex);
+    if(firstCharIndex !== -1){
+        var a = text.slice(0,firstCharIndex);
+        var b = text.slice(firstCharIndex+5);
+        alert(a);
+        alert(b);
+        alert(text);
+
+        var c = a + "white"+ b;
+        alert(c);
+
+    }
+
+    //alert(indexVal6);
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

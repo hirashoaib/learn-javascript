@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<script>
+
+    // Chap 33
+    // Specifying a date and time
+
+    var rightNow = new Date();
+    alert(rightNow);
+    //rightNow.getTime();
+
+    var otherDay = new Date("June 11, 2018");
+    alert(otherDay);
+
+    var msDiff = otherDay.getTime() - rightNow.getTime();
+    alert(msDiff);
+
+    var diffInDays = msDiff / (1000 * 60 * 60 * 24);
+    alert(diffInDays);
+
+
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

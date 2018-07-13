@@ -1,0 +1,36 @@
+<html>
+<head>
+   <style>
+        .newDiv {
+            background-color: slategrey
+        }
+
+        .updatedDiv {
+            background-color: rosybrown
+        }
+   </style>
+</head>
+<body>
+    <!-- 
+     Chapter 67
+    The DOM: Adding nodes
+    -->
+
+    <div id="container">
+
+    </div>
+    
+   
+</body>
+<script>
+    
+    var img1 = document.createElement("img");
+    img1.setAttribute("src","demo198_1_fish1.jpg");
+    
+    var div1 = document.getElementById("container")
+    div1.appendChild(img1);
+
+
+
+</script>
+</html>

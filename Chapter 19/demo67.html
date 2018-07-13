@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<script>
+
+    //Chap 19
+    //for loops with array
+    // break
+
+    
+
+    // initilization ; condition ; statement
+    /*
+    // optional
+    for(  ;   ;   ){
+
+    }
+    */
+    var cities = ["Karachi","Lahore","Islamabad","Peshawar","Hyderabad"];
+
+    var myCity = "Islamabad";
+    var matchFound = false;
+
+    for(var i=0; i<5; i++){
+        if(myCity === cities[i]){
+            alert("City Found");
+            matchFound = true;
+            break;
+        }
+        //alert(i);
+    }
+
+    if(matchFound === false){
+        alert("Sorry,Your city is not in the list!");
+    }
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

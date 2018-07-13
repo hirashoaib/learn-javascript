@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<script>
+
+    //Chap 23
+    // indexOf
+    // Assignment
+    
+    var text = "The quick brown fox jumps over the lazy dog";
+    var startIndex = 0;
+    var counter = 0;
+
+    for(var a = 0; a < text.length ;a++){
+        var newIndex = text.indexOf("e",startIndex);
+        if(newIndex !== -1){
+            counter++;
+            startIndex = newIndex + 1;
+        }
+    }
+
+    
+    alert(counter);   
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

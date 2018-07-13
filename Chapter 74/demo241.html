@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 74
+    Objects: Prototypes
+    -->
+   
+</body>
+<script>
+
+   function Student(name, age){
+        this.name = name;
+        this.age = age;
+   }
+
+   Student.prototype.subject = "JavaScript";
+
+   Student.prototype.study = function (){
+       alert("He is studying to become a Software developer");
+   }
+
+   Student.prototype.payFees = function (){
+       alert("fee paid");
+   }
+
+
+   var b = new Student("Arsalan",20);
+   var c = new Student("Ali",25);
+   alert(b.name);
+   
+   alert(b.subject);
+   alert(c.subject);
+   Student.prototype.subject = "Advanced Javascript";
+   
+   alert(b.subject);
+   alert(c.subject);
+
+
+
+
+
+</script>
+</html>

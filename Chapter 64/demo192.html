@@ -1,0 +1,38 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 64
+    The DOM: Counting elements
+    -->
+    
+    <div id="cal">
+        <p>Southern Cal is sunny.</p>
+        <p id="p1">Northern Cal is rainy.</p>
+        <p>Eastern Cal is desert.</p>
+    </div>
+    <div id="ny">
+        <p>Urban NY is crowded.</p>
+        <p>Rural NY is sparse.</p>
+    </div>
+    
+</body>
+<script>
+    
+    var d = document.getElementsByTagName("p");
+    alert(d.length);
+
+    var d1 = document.getElementById("cal");
+    var childList = d1.childNodes;
+    alert(childList.length);
+
+    
+    
+   
+
+</script>
+
+
+</html>

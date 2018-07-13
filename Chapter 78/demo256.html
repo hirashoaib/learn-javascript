@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 78
+    Browser control: Forward and reverse
+    -->
+   
+   <div>
+       Main page <br>
+       Hello World
+   </div>
+   <button onclick="goBack()" >Go Back</button>
+   <button onclick="goForward()" >Go Forward</button>
+   <button onclick="goPlus2()" >Go Plus 2 </button>
+   <button onclick="goMinus2()" >Go Minus 2</button>
+   <br><br>
+   <button onclick="goToPage1()" >Go to Page 1</button>
+   <button onclick="goToPage2()" >Go to Page 2</button>
+   <button onclick="goToPage3()" >Go to Page 3</button>
+   <button onclick="goToPage4()" >Go to Page 4</button>
+</body>
+<script>
+    
+    function goBack(){
+        history.back()
+    }
+    function goForward(){
+        history.forward()
+    }
+    function goPlus2(){
+        history.go(2);
+    }
+
+    function goMinus2(){
+        history.go(-2);
+    }
+
+    
+    function goToPage1(){
+        window.location.href = "file:///D:/commonData/demojs/demo256_1.html"
+    }
+    function goToPage2(){
+        window.location.href = "file:///D:/commonData/demojs/demo256_2.html"
+    }
+    function goToPage3(){
+        window.location.href = "file:///D:/commonData/demojs/demo256_3.html"
+    }
+    function goToPage4(){
+        window.location.href = "file:///D:/commonData/demojs/demo256_4.html"
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 76
+    Browser control: Getting and setting the URL
+    -->
+   
+   <div>
+       <h1>Test Windows.location's properites</h1>
+   </div>
+   <div>
+       window.location.href
+       <button onclick="onClickButton1()" >window.location.href</button>
+   </div>
+   <br>
+   <div>
+       window.location.hostname
+       <button onclick="onClickButton2()" >window.location.hostname</button>
+   </div>
+   <br>
+   <div>
+       window.location.pathname
+       <button onclick="onClickButton3()" >window.location.pathname</button>
+   </div>
+   <br>
+   <div>
+       window.location.hash
+       <button onclick="onClickButton4()" >window.location.hash</button>
+   </div>
+   <br>
+   <div>
+       Change page
+       <button onclick="onClickButton5()" >Change Page</button>
+   </div>
+</body>
+<script>
+    
+    function onClickButton1(){
+        alert(window.location.href)
+    }
+    function onClickButton2(){
+        alert(window.location.hostname)
+    }
+    function onClickButton3(){
+        alert(window.location.pathname)
+    }
+    function onClickButton4(){
+        alert(window.location.hash)
+    }
+
+    function onClickButton5(){
+        var currentSite = window.location.hostname;
+        var destination = "http://" + currentSite + "/demo252_1.html";
+        window.location.href = destination;
+    }
+
+    
+
+
+
+</script>
+</html>

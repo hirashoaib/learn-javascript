@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 74
+    Objects: Prototypes
+    -->
+   
+</body>
+<script>
+
+   function Student(name, age){
+        
+   }
+
+   //Don't do this
+   Student.prototype.name = "";
+   Student.prototype.age = 0;
+
+   Student.prototype.study = function (){
+       alert("He is studying to become a Software developer");
+   }
+
+   Student.prototype.payFees = function (){
+       alert("fee paid");
+   }
+
+
+   var b = new Student("Arsalan",20);
+   var c = new Student("Ali",25);
+   alert(b.name);
+   b.study();
+   b.payFees();
+   
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+   <style>
+        .newDiv {
+            background-color: slategrey
+        }
+
+        .updatedDiv {
+            background-color: rosybrown
+        }
+   </style>
+</head>
+<body>
+    <!-- 
+     Chapter 65
+    The DOM: Attributes
+    -->
+    
+    <div id="d1" class="newDiv">
+        Hello World
+    </div>
+    
+</body>
+<script>
+    var a = document.getElementById("d1");
+    alert(a.hasAttribute("class"));
+    alert(a.getAttribute("class"));
+    
+</script>
+</html>

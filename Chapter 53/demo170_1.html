@@ -1,0 +1,37 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 53
+     Swapping images
+    -->
+    <img width="100px" height="100px" 
+            src="demo170_browser_1.png" 
+            id="before" 
+            onMouseover="swapPic();">
+
+    <img width="100px" height="100px" 
+            src="demo170_browser_1.png" 
+            id="newImage" 
+            onMouseover="swapPic2();">
+    <br/>
+    <br/>
+    
+    
+</body>
+<script>
+
+    function swapPic() {
+        document.getElementById("before").src = "demo170_browser_2.png";
+    }
+
+    function swapPic2() {
+        document.getElementById("newImage").src = "demo170_browser_2.png";
+    }
+
+</script>
+
+
+</html>

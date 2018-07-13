@@ -1,0 +1,46 @@
+<html>
+<head>
+   <style>
+        .newDiv {
+            background-color: slategrey
+        }
+
+        .updatedDiv {
+            background-color: rosybrown
+        }
+   </style>
+</head>
+<body>
+    <!-- 
+     Chapter 68
+    The DOM: Inserting nodes
+    -->
+    <div id="mydata">
+        Hello World
+    </div>
+
+    <input type="button" value="Add Element" onclick="addEle()"/>
+   
+</body>
+<script>
+    
+    function addEle(){
+        var mainDiv = document.getElementById("mydata");
+
+
+        var p = document.createElement("div");
+        p.setAttribute("class","newDiv");
+        
+        var t = document.createTextNode("This is new Text");
+        
+        p.appendChild(t);
+
+        mainDiv.appendChild(p);
+    }
+
+    
+
+
+
+</script>
+</html>

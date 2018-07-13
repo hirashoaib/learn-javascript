@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 73
+    Objects: Constructors for methods
+    -->
+   
+</body>
+<script>
+
+    function Plan(name, price, space, transfer, pages) {
+        this.name = name;
+        this.price = price;
+        this.space = space;
+        this.transfer = transfer;
+        this.pages = pages;
+        this.calculateCharges = function (months){
+            return this.price * months;
+        };
+    }
+
+    var plan1 = new Plan("Basic", 3.99, 100, 1000, 10);
+    var plan2 = new Plan("Premium", 5.99, 500, 5000, 50);
+    var plan3 = new Plan("Ultimate", 9.99, 2000, 20000, 500);
+
+    alert(plan1.price);
+    var charges = plan1.calculateCharges(8);
+    alert(charges);
+
+
+
+
+
+
+</script>
+</html>

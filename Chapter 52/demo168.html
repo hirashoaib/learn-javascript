@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        .abc {
+            background-color:lightgray;
+        }
+
+        .xyz{
+            border: 1px solid darkblue;
+        }
+
+        .fontColor {
+            color: darkred;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+     Chapter 52
+     Manipulating images and text
+    -->
+    <p id="message" class="abc xyz" onclick="updateColor()"  >Hello World</p>
+    
+    
+</body>
+<script>
+    function updateColor (){
+        var para= document.getElementById("message")
+        para.className="fontColor"
+
+    }
+
+</script>
+
+
+</html>

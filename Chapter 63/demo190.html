@@ -1,0 +1,36 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <!-- 
+     Chapter 63
+    The DOM: Getting a target's name
+
+    -->
+    
+    <div id="cal">
+        <p>Southern Cal is sunny.</p>
+        <p id="p1">Northern Cal is rainy.</p>
+        <p>Eastern Cal is desert.</p>
+    </div>
+    <div id="ny">
+        <p>Urban NY is crowded.</p>
+        <p>Rural NY is sparse.</p>
+    </div>
+    
+</body>
+<script>
+    
+    var d = document.getElementById("p1");
+    alert(d.nodeType);
+    alert(d.nodeName);
+    alert(d.nodeValue);
+    alert(d.innerHTML);
+    
+   
+
+</script>
+
+
+</html>

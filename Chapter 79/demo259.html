@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+    <!-- 
+    Chapter 79
+    Browser control: Filling the window with content
+    -->
+   
+   <button onclick="openNewWindow()">Open New Window</button>
+   
+</body>
+<script>
+    
+    function openNewWindow(){
+        var content = "<h1>Capuchin monkey</h1><img src= 'monkey.jpg'><p>The word capuchin derives from a group of friars<br>named the Order of Friars Minor Capuchin who wear<br>brown robes with large hoods covering their heads.</p>"
+        var newWindow = window.open();
+        //newWindow.document.write(content);
+    }
+
+        
+</script>
+</html>

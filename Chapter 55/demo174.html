@@ -1,0 +1,49 @@
+<html>
+<head>
+   <style>
+        .abc {
+            background-color:darkred;
+        }
+        .xyz {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+     Chapter 55
+     Setting styles
+    -->
+    
+    <p id="p1" class="abc">Hello World Paragraph 1</p>
+    <p id="p2">Hello World Paragraph 2</p>
+    <p id="p3">Hello World Paragraph 3</p>
+    <p id="p4">Hello World Paragraph 4</p>
+    <p id="p5">Hello World Paragraph 5</p> 
+    <button onclick="applyCSSP1()">For P1</button>
+    <button onclick="applyCSSP2()">For P2</button>
+    <button onclick="applyCSSP3()">For P3</button>
+    <button onclick="applyCSSP4()">For P4</button>
+    <button onclick="applyCSSP5()">For P5</button>   
+    
+</body>
+<script>
+    function applyCSSP1() {
+        document.getElementById("p1").className += " xyz";
+    }
+    function applyCSSP2() {
+        document.getElementById("p2").style.fontSize="18px"
+    }
+    function applyCSSP3() {
+        document.getElementById("p3").style.cssFloat = "right";
+    }
+    function applyCSSP4() {
+        document.getElementById("p4").style.visibility = "hidden";
+    }
+    function applyCSSP5() {
+        document.getElementById("p5").style.margin = "20px";
+    }
+</script>
+
+
+</html>
